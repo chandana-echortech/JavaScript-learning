@@ -31,9 +31,12 @@
 
 // let n = 5;
 // for (let i = 1; i <= n; i++) {
-//   let row = '  '.repeat(n - i); 
+//   let row = '--'.repeat(n - i); 
 //   for (let j = 1; j <= i; j++) {
-//     row += '* ';
+//     if (j === 1) {  row += '*';    
+//            } else {
+//                row += '-*';
+//                 }
 //   }
 //   console.log(row);
 // }
@@ -50,7 +53,171 @@
 
 //problem 6
 
+// let n = 5
+// for (let i = n; i>=1; i--){
+//   let row = '  '.repeat(n-i);
+//   for (let j= 1; j<=1;j++){
+//     row += '-*'.repeat(i);
+//   }
+//   console.log(row);
+// }
+// for (let i = 2; i <= n; i++) {
+//     let row = '  '.repeat(n - i); 
+//     for (let j = 1; j <= i; j++) {
+//       row += '-*';
+//     }
+//     console.log(row);
+//   }
 
+//problem 7
+// let n = 5;
+
+// for (let i = 0; i < n; i++) {
+//   let row = '';
+//   row += ' '.repeat(i);                  
+//   row += '* '.repeat( (n - i) );    
+//   console.log(row);
+// }
+// for (let i = 2; i <= n; i++) {
+//   let row = '';
+//   row += ' '.repeat(n - i);       
+//   row += '* '.repeat(i);   
+//   console.log(row);
+//}
+
+//problem 8
+// let n = 7;
+// for (let i = 1; i <= n; i++) {
+//     let row = ' '.repeat(n - i); 
+//     for (let j = 1; j <= i; j++) {
+//       row += '* ';
+//     }
+//     console.log(row);
+//   }
+  
+//   for (let i = 6; i>=1; i--){
+//     let row = ' '.repeat(n-i);
+//     for (let j= 1; j<=1;j++){
+//       row += '* '.repeat(i);
+//     }
+//     console.log(row);
+//   }
+
+//problem 9 
+// let n = 5; 
+// for (let i = 1; i <= n; i++) {
+//   let row = '-';
+//   for (let j = 1; j <= i; j++) {
+//     if (j == 1) {  row = '*';    
+//                  } else {
+//                      row += '-*';
+//                       }
+//   }
+//   console.log(row);
+// }
+// for (let i = 4; i >= 1; i--) {
+//   let row = '-';
+//   for (let j = 1; j <= i; j++) {
+//     if (j ===1) {  row = '*';    
+//                  } else {
+//                      row += '-*';
+//                       }
+//   }
+//   console.log(row);
+// }
+
+
+//problem 10 
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//   let row = '--'.repeat(n - i); 
+//   for (let j = 1; j <= i; j++) {
+//     if (j == 1) {  row += '*';    
+//                        } else {
+//                            row += '-*';
+//                             }
+//    
+//   }
+//   console.log(row);
+// }
+// for (let i = 4; i>=1; i--){
+//   let row = '--'.repeat(n-i);
+//   for (let j= 1; j<=i;j++){
+//     if (j==1) { row += '*';
+//       }else{
+//         row += '-*';
+//       
+//   }
+//   console.log(row);
+
+// }
+
+// // problem 11
+let n = 5;
+
+for (let i = 1; i <= n; i++) {
+  let row = '';
+  
+  for (let j = 1; j<= (n - i) * 2; j++) {
+    row += '-';
+  }
+ for (let k = 1; k<= i; k++) {
+    if (k == 1) {
+      row += '*';
+    } else {
+      row += '-*';
+    }
+  }
+console.log(row);
+}
+for (let i = n - 1; i >= 1; i--) {
+  let row = '';
+
+  for (let j = 1; j <= (n - i) * 2; j++) {
+    row += '-';
+  }
+  for (let k= 1; k<= i; k++) {
+    if (k == 1) {
+      row += '*';
+    } else {
+      row += '-*';
+    }
+  }
+
+  console.log(row);
+}
+
+
+
+
+//pyramid
+
+// let n = 5;
+// for (let i=1; i<=n;i++){
+//   let row = '-';
+//   row += '-'.repeat(n-i);
+//   row += '-*'.repeat(i);
+//   console.log(row)
+// }
+
+//inverted pyramid
+
+// let n= 5;
+// for (let i=0; i<n; i++){
+// let row = '-' ;
+// row += '-'.repeat(i);
+// row += '-*'. repeat(n-i);
+// console.log(row)
+// }
+
+// let n = 5;
+// for (let i=1; i<=n;i++){
+//   let row = '-';
+//   row += '-'.repeat(n-i);
+//   row += '-*'.repeat(i);
+//   console.log(row)
+// }
 
 
 //code here 
